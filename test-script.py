@@ -29,6 +29,7 @@ DEPOSIT_AMOUNT = int(os.environ.get("DEPOSIT_AMOUNT")) or 5000
 if None in [KEY_PASSPHRASE, CONTRACT_ADDR, KEY_PATH, DEPOSIT_AMOUNT]:
     raise ValueError(f"Check variables.")
 
+print(f"FFFFFF: {[KEY_PASSPHRASE, CONTRACT_ADDR, KEY_PATH, DEPOSIT_AMOUNT]}")
 
 def add(value: int):
     """Deposit ICX values to SCORE."""
